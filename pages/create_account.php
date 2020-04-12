@@ -9,9 +9,9 @@
         <input type="text" name="name" placeholder="Name">
         <input type="text" name="email" placeholder="Email Address">
         <input type="text" name="password" placeholder="Password">
-        <input type="button" name="create_acc_send" value="Sign me in">
+        <input type="button" name="create_acc_send" value="Create account">
       </form>
-      <a class="form_footer" href="/pages/create_account.php">Already have an account?</a>
+      <a class="form_footer" href="/pages/login.php">Already have an account?</a>
     </div>
   </div>
 
