@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <?php $pageName = basename($_SERVER['PHP_SELF']); ?>
 
-    <?php if ($pageName === 'login.php') : ?>
+    <?php if ($pageName === 'login.php' OR $pageName === 'create_account.php') : ?>
       <link rel="stylesheet" href="/css/login.css">
     <?php endif; ?>
 
@@ -17,10 +17,6 @@
 
     <?php if ($pageName === 'projects.php') : ?>
       <link rel="stylesheet" href="/css/projects.css">
-    <?php endif; ?>
-
-    <?php if ($pageName === 'create_account.php') : ?>
-      <link rel="stylesheet" href="/css/create_account.css">
     <?php endif; ?>
   </head>
   <body>
