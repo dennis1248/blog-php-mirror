@@ -26,7 +26,7 @@
         <h4 class="header_h4">Dennis ten Hoove</h4>
       </div>
       <div class="right">
-        <a href="/index.php">Home</a>
+        <a href="/">Home</a>
         <a href="/pages/projects.php">Projects</a>
         <?php if (true) { ?>
           <a href="/pages/login.php">Login</a>
