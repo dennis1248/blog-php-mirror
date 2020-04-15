@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/css/header.css">
     <?php $pageName = basename($_SERVER['PHP_SELF']); ?>
 
+    <?php if ($pageName === 'index.php') : ?>
+      <link rel="stylesheet" href="/css/index.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <?php endif; ?>
+
     <?php if ($pageName === 'login.php' OR $pageName === 'create_account.php') : ?>
       <link rel="stylesheet" href="/css/login.css">
     <?php endif; ?>

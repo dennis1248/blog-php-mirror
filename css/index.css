@@ -1,0 +1,50 @@
+.content {
+  width: 1280px;
+  margin: 80px auto auto auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container_box {
+  width: 50%;
+  padding: 0 30px 0 30px;
+}
+
+.paragraph {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.header_title {
+  padding: 10px 25px 10px 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.header_title h3 {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.boxed {
+  border: 1px solid #eee;
+  border-left: 3px solid #d8d8d8;
+  border-radius: 3px;
+}
+
+.post {
+  border-left: 3px solid #2a77fc;
+}
+
+.article {
+  padding: 10px 25px 10px 25px;
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 100%;
+  }
+}
