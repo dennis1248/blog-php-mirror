@@ -7,8 +7,8 @@
     <div class="form_container">
       <form class="" action="/php/create_account.php" method="post">
         <input type="text" name="name" placeholder="Name">
-        <input type="text" name="email" placeholder="Email Address">
-        <input type="text" name="password" placeholder="Password">
+        <input type="email" name="email" placeholder="Email Address">
+        <input type="password" name="password" placeholder="Password">
         <input type="button" name="create_acc_send" value="Sign me up">
       </form>
       <a class="form_footer" href="/pages/login.php">Already have an account?</a>

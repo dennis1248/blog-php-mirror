@@ -7,7 +7,7 @@
     <div class="form_container">
       <form class="" action="/php/log_me_in.php" method="post">
         <input type="text" name="email" placeholder="Email Address">
-        <input type="text" name="password" placeholder="Password">
+        <input type="password" name="password" placeholder="Password">
         <input type="button" name="login_send" value="Sign me in">
       </form>
       <a class="form_footer" href="/pages/create_account.php">No account yet?</a>
