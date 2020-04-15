@@ -9,15 +9,11 @@
 
     <?php if ($pageName === 'index.php') : ?>
       <link rel="stylesheet" href="/css/index.css">
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
     <?php endif; ?>
 
     <?php if ($pageName === 'login.php' OR $pageName === 'create_account.php') : ?>
       <link rel="stylesheet" href="/css/login.css">
-    <?php endif; ?>
-
-    <?php if ($pageName === 'posts.php') : ?>
-      <link rel="stylesheet" href="/css/posts.css">
     <?php endif; ?>
 
     <?php if ($pageName === 'projects.php') : ?>
@@ -31,7 +27,6 @@
       </div>
       <div class="right">
         <a href="/index.php">Home</a>
-        <a href="/pages/posts.php">Posts</a>
         <a href="/pages/projects.php">Projects</a>
         <?php if (true) { ?>
           <a href="/pages/login.php">Login</a>
