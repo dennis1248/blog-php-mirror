@@ -12,6 +12,13 @@
   padding: 0 30px 0 30px;
 }
 
+.container_small {
+  display: none;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
 .container_box {
   width: 100%;
   padding-bottom: 30px;
@@ -67,7 +74,11 @@
   }
 
   .container {
-    width: 80%;
+    display: none;
+  }
+
+  .container_small {
+    display: flex;
     margin: auto;
   }
 }
