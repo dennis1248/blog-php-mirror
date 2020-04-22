@@ -1,3 +1,11 @@
+<?php
+
+  // Website settings
+  include ($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
