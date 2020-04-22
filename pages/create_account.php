@@ -9,6 +9,7 @@
         <input type="text" name="name" placeholder="Name">
         <input type="email" name="email" placeholder="Email Address">
         <input type="password" name="password" placeholder="Password">
+        <input type="password" name="password_repeat" placeholder="Repeat password">
         <input type="button" name="create_acc_send" value="Sign me up">
       </form>
       <a class="form_footer" href="/pages/login.php">Already have an account?</a>
