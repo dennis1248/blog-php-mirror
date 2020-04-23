@@ -8,9 +8,9 @@
       <form class="" action="/php/log_me_in.php" method="post">
         <input type="text" name="email" placeholder="Email Address">
         <input type="password" name="password" placeholder="Password">
-        <input type="button" name="login_send" value="Sign me in">
+        <input type="submit" name="login_send" value="Sign me in">
       </form>
-      <a class="form_footer" href="/pages/create_account.php">No account yet?</a>
+      <a class="form_footer" href="/pages/signup.php">No account yet?</a>
     </div>
   </div>
 

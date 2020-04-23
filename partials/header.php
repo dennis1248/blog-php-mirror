@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="/css/index.css">
     <?php endif; ?>
 
-    <?php if ($pageName === 'login.php' OR $pageName === 'create_account.php') : ?>
+    <?php if ($pageName === 'login.php' OR $pageName === 'signup.php') : ?>
       <link rel="stylesheet" href="/css/login.css">
     <?php endif; ?>
 

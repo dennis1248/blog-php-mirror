@@ -50,7 +50,7 @@ input {
   text-align: center;
 }
 
-input[type=button] {
+input[type=submit] {
   width: 110px;
   height: 38px;
   background-color: #2a77fc;
@@ -59,6 +59,11 @@ input[type=button] {
   margin: 25px 0 auto auto;
 }
 
-input[type=button]:hover {
+input[type=submit]:hover {
   background: #79a9fc;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
 }
