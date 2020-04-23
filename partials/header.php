@@ -28,6 +28,12 @@
     <?php endif; ?>
   </head>
   <body>
+    <?php if ($_GET[signup] === 'success') : ?>
+      <div id="message">
+        <span class="message_text">You have successfully created an account</span>
+        <span class="close" onclick="document.getElementById('message').hidden = true;">X</span>
+      </div>
+    <?php endif; ?>
     <header>
       <div class="left">
         <h4 class="header_h4">Dennis ten Hoove</h4>
