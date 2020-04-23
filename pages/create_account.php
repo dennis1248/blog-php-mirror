@@ -5,7 +5,7 @@
       <h1 class="sign_in_header">Sign up</h1>
     </div>
     <div class="form_container">
-      <form class="" action="/php/create_account.php" method="post">
+      <form class="" action="/functions/create_account.func.php" method="post">
         <input type="text" name="name" placeholder="Name">
         <input type="email" name="email" placeholder="Email Address">
         <input type="password" name="password" placeholder="Password">
