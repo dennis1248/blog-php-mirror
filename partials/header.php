@@ -1,7 +1,7 @@
 <?php
 
   // Website settings
-  include ($_SERVER['DOCUMENT_ROOT'].'/config/default.php');
+  include ($_SERVER['DOCUMENT_ROOT'].'/config/default.conf');
 
 ?>
 
