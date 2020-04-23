@@ -1,5 +1,4 @@
 <?php
-  error_reporting(E_ALL);
 
   if (isset($_POST['create_acc_send'])) {
 
