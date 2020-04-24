@@ -32,21 +32,21 @@
   </head>
   <body>
 
-    <?php if (isset($_GET['message']) && $_GET['message-type'] == 'notice'): ?>
+    <?php if (isset($_GET['message']) && $_GET['message-type'] === 'notice'): ?>
       <div id="message" class="notice">
         <span class="message_text"><?php echo $_GET['message']; ?></span>
         <span class="close" onclick="document.getElementById('message').hidden = true;">X</span>
       </div>
     <?php endif; ?>
 
-    <?php if (isset($_GET['message']) && $_GET['message-type'] == 'confirm'): ?>
+    <?php if (isset($_GET['message']) && $_GET['message-type'] === 'confirm'): ?>
       <div id="message" class="confirm">
         <span class="message_text"><?php echo $_GET['message']; ?></span>
         <span class="close" onclick="document.getElementById('message').hidden = true;">X</span>
       </div>
     <?php endif; ?>
 
-    <?php if (isset($_GET['message']) && $_GET['message-type'] == 'warning'): ?>
+    <?php if (isset($_GET['message']) && $_GET['message-type'] === 'warning'): ?>
       <div id="message" class="warning">
         <span class="message_text"><?php echo $_GET['message']; ?></span>
         <span class="close" onclick="document.getElementById('message').hidden = true;">X</span>

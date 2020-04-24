@@ -24,10 +24,10 @@ if (isset($_POST['login_send'])) {
       $result = mysqli_stmt_get_result($stmt);
       if ($row = mysqli_fetch_assoc($result)) {
         $passwordCheck = password_verify($password, $row['pwd']);
-        if ($passwordCheck == false) {
+        if ($passwordCheck === false) {
           header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?error=loginfail");
           exit();
-        } else if ($passwordCheck == true) {
+        } else if ($passwordCheck === true) {
           session_start();
           $_SESSION['userId'] = $row['id'];
           $_SESSION['userName'] = $row['userName'];
