@@ -25,6 +25,7 @@ header {
   text-decoration: none;
   color: black;
   padding: 0.75em 1em;
+  outline: none;
 }
 
 .right a:last-child {
