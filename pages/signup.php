@@ -28,10 +28,10 @@
           <?php if ($_GET[error] === 'usertaken'): ?>
             <p class="error">This username is already taken</p>
           <?php endif; ?>
-          <input type="text" name="userName" placeholder="Name" value="<?php echo $_GET[u]; ?>">
-          <input type="email" name="email" placeholder="Email Address" value="<?php echo $_GET[e]; ?>">
-          <input type="password" name="password" placeholder="Password">
-          <input type="password" name="password_repeat" placeholder="Repeat password">
+          <input type="text" name="userName" placeholder="Name" value="<?php echo $_GET[u]; ?>" autocomplete="off">
+          <input type="email" name="email" placeholder="Email Address" value="<?php echo $_GET[e]; ?>" autocomplete="off">
+          <input type="password" name="password" placeholder="Password" autocomplete="off">
+          <input type="password" name="password_repeat" placeholder="Repeat password" autocomplete="off">
           <input type="submit" name="create_acc_send" value="Sign me up">
         </form>
         <a class="form_footer" href="/pages/login.php">Already have an account?</a>
