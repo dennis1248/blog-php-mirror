@@ -1,5 +1,12 @@
 <?php
 
+  include ($_SERVER['DOCUMENT_ROOT'].'/config/default.conf');
+
+  if (!$allowAccountCreation) {
+    header("Location: http://".$_SERVER['HTTP_HOST']."/pages/signup.php");
+    exit();
+  }
+
   if (isset($_POST['create_acc_send'])) {
 
     require 'database.inc.php';

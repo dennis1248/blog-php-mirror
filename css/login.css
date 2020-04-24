@@ -63,6 +63,10 @@ input[type=submit]:hover {
   background: #79a9fc;
 }
 
+input[disabled] {
+  cursor: not-allowed;
+}
+
 .error {
   color: red;
   font-weight: bold;
