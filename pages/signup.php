@@ -7,25 +7,25 @@
     <div class="form_container">
       <form class="" action="/functions/signup.func.php" method="post">
         <?php if ($_GET[error] === 'emptyfields'): ?>
-          <p class="error">ERROR: Please fill in all fields</p>
+          <p class="error">Please fill in all fields</p>
         <?php endif; ?>
         <?php if ($_GET[error] === 'invalidmailusername'): ?>
-          <p class="error">ERROR: Username and email are invalid</p>
+          <p class="error">Username and email are invalid</p>
         <?php endif; ?>
         <?php if ($_GET[error] === 'invalidemail'): ?>
-          <p class="error">ERROR: Email is invalid</p>
+          <p class="error">Email is invalid</p>
         <?php endif; ?>
         <?php if ($_GET[error] === 'invalidusername'): ?>
-          <p class="error">ERROR: Username is invalid</p>
+          <p class="error">Username is invalid</p>
         <?php endif; ?>
         <?php if ($_GET[error] === 'passwordcomparefail'): ?>
-          <p class="error">ERROR: Passwords do not match</p>
+          <p class="error">Passwords do not match</p>
         <?php endif; ?>
         <?php if ($_GET[error] === 'sqlerror'): ?>
-          <p class="error">ERROR: an SQL error occured</p>
+          <p class="error">An SQL error occured</p>
         <?php endif; ?>
         <?php if ($_GET[error] === 'usertaken'): ?>
-          <p class="error">ERROR: This username is already taken</p>
+          <p class="error">This username is already taken</p>
         <?php endif; ?>
         <input type="text" name="userName" placeholder="Name" value="<?php echo $_GET[u]; ?>">
         <input type="email" name="email" placeholder="Email Address" value="<?php echo $_GET[e]; ?>">

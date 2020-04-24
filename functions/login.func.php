@@ -25,7 +25,7 @@ if (isset($_POST['login_send'])) {
       if ($row = mysqli_fetch_assoc($result)) {
         $passwordCheck = password_verify($password, $row['pwd']);
         if ($passwordCheck === false) {
-          header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?error=loginfail");
+          header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?error=invalidlogin");
           exit();
         } else if ($passwordCheck === true) {
           session_start();
@@ -40,7 +40,7 @@ if (isset($_POST['login_send'])) {
           exit();
         }
       } else {
-        header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?error=loginfail");
+        header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?error=invalidlogin");
         exit();
       }
 

@@ -6,6 +6,9 @@
     </div>
     <div class="form_container">
       <form class="" action="/functions/login.func.php" method="post">
+        <?php if ($_GET[error] === 'invalidlogin'): ?>
+          <p class="error">Username or password is incorrect</p>
+        <?php endif; ?>
         <input type="text" name="mailuserName" placeholder="Email address or username">
         <input type="password" name="password" placeholder="Password">
         <input type="submit" name="login_send" value="Sign me in">
