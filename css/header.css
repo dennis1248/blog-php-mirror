@@ -46,7 +46,6 @@ header {
 
 #message {
   height: 2em;
-  background-color: #ffa500;
 }
 
 .close {
@@ -60,4 +59,16 @@ header {
 .message_text {
   float: left;
   padding: 0.25em 1em;
+}
+
+.notice {
+  background-color: #FAB57F;
+}
+
+.confirm {
+  background-color: #90EE90;
+}
+
+.warning {
+  background-color: #FF6347;
 }

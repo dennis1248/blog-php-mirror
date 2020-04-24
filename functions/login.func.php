@@ -32,7 +32,7 @@ if (isset($_POST['login_send'])) {
           $_SESSION['userId'] = $row['id'];
           $_SESSION['userName'] = $row['userName'];
 
-          header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?login=success");
+          header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=You have successfully been logged in&message-type=confirm");
           exit();
 
         } else {

@@ -52,7 +52,7 @@
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
 
-            header("Location: http://".$_SERVER['HTTP_HOST']."/?signup=success");
+            header("Location: http://".$_SERVER['HTTP_HOST']."/?message=Your account was created successfully&message-type=confirm");
             exit();
           }
         }

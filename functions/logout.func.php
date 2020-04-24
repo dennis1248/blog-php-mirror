@@ -4,7 +4,7 @@
   session_unset();
   session_destroy();
 
-  header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?logout=success");
+  header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=You have successfully been logged out&message-type=confirm");
 
 
  ?>
