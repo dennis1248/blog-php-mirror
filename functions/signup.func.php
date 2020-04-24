@@ -26,7 +26,7 @@
       exit();
     } else {
 
-      $sql = "SELECT userName FROM users WHERE userName=?";
+      $sql = "SELECT userName FROM users WHERE userName=?;";
       $stmt = mysqli_stmt_init($conn);
       if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("Location: http://".$_SERVER['HTTP_HOST']."/pages/signup.php?error=slqerror");
