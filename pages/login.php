@@ -5,8 +5,8 @@
       <h1 class="sign_in_header">Sign in</h1>
     </div>
     <div class="form_container">
-      <form class="" action="/php/log_me_in.php" method="post">
-        <input type="text" name="email" placeholder="Email Address">
+      <form class="" action="/functions/login.func.php" method="post">
+        <input type="text" name="mailuserName" placeholder="Email address or username">
         <input type="password" name="password" placeholder="Password">
         <input type="submit" name="login_send" value="Sign me in">
       </form>

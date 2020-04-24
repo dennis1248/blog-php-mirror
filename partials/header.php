@@ -3,6 +3,9 @@
   // Website settings
   include ($_SERVER['DOCUMENT_ROOT'].'/config/default.conf');
 
+  // Session
+  session_start();
+
 ?>
 
 
@@ -41,10 +44,10 @@
       <div class="right">
         <a href="/">Home</a>
         <a href="/pages/projects.php">Projects</a>
-        <?php if (true) { ?>
-          <a href="/pages/login.php">Login</a>
+        <?php if (isset($_SESSION['userId'])) { ?>
+          <a href="/functions/logout.func.php">Logout</a>
         <?php } else { ?>
-          <a href="/pages/logout.php">Logout</a>
+          <a href="/pages/login.php">Login</a>
         <?php }; ?>
       </div>
     </header>
