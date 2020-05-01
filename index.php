@@ -1,7 +1,14 @@
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/partials/header.php'); ?>
 
-  <div class="content">
 
+  <?php if (isset($_SESSION['userId'])): ?>
+    <div class="controls">
+      <a href="/pages/newpost.php" class="controls_button">New post</a>
+      <a href="/pages/manage.php" class="controls_button"> Manage posts</a>
+    </div>
+  <?php endif; ?>
+
+  <div class="content">
     <!-- The PHP on this page is currently only for testing the front-end -->
     <!-- default size -->
     <div class="container">

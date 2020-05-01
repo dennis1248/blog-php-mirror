@@ -1,0 +1,53 @@
+.content {
+  width: 1280px;
+  margin: 40px auto auto auto;
+}
+
+.form_container {
+  margin: auto;
+  width: 500px;
+  padding: 40px;
+}
+
+input {
+  display: block;
+  border: 1px solid #eee;
+  padding: 0.5em;
+  margin: 10px auto auto auto;
+  width: 100%;
+  font-size: 1em;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #eee;
+  padding: 0.5em;
+  margin: 10px auto auto auto;
+  width: 100%;
+  font-size: 1em;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type=submit] {
+  width: 110px;
+  height: 38px;
+  background-color: #2a77fc;
+  border: 0;
+  color: white;
+  margin: 25px -1em auto auto;
+}
+
+input[type=submit]:hover {
+  background: #79a9fc;
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 100%;
+  }
+}
