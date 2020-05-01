@@ -3,6 +3,9 @@
   // Website settings
   include ($_SERVER['DOCUMENT_ROOT'].'/config/default.conf');
 
+  // SVG icons
+  include ($_SERVER['DOCUMENT_ROOT'].'/functions/svgReq.func.php');
+
   // Session
   session_start();
 
@@ -35,27 +38,21 @@
     <?php if (isset($_GET['message']) && $_GET['message-type'] === 'notice'): ?>
       <div id="message" class="notice">
         <span class="message_text"><?php echo $_GET['message']; ?></span>
-        <svg class="close" onclick="document.getElementById('message').hidden = true;">
-          <path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path>
-        </svg>
+        <?php svgReq('close'); ?>
       </div>
     <?php endif; ?>
 
     <?php if (isset($_GET['message']) && $_GET['message-type'] === 'confirm'): ?>
       <div id="message" class="confirm">
         <span class="message_text"><?php echo $_GET['message']; ?></span>
-        <svg class="close" onclick="document.getElementById('message').hidden = true;">
-          <path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path>
-        </svg>
+        <?php svgReq('close'); ?>
       </div>
     <?php endif; ?>
 
     <?php if (isset($_GET['message']) && $_GET['message-type'] === 'warning'): ?>
       <div id="message" class="warning">
         <span class="message_text"><?php echo $_GET['message']; ?></span>
-        <svg class="close" onclick="document.getElementById('message').hidden = true;">
-          <path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path>
-        </svg>
+        <?php svgReq('close'); ?>
       </div>
     <?php endif; ?>
 
