@@ -1,31 +1,34 @@
 .content {
   width: 1280px;
-  margin: 40px auto auto auto;
+  margin: 40px auto 200px auto;
 }
 
 .form_container {
-  margin: auto;
+  margin: 75px auto auto auto;
   width: 500px;
-  padding: 40px;
+  padding: 25px 35px 25px 35px;
+  border: 1px solid #eee;
+  border-top: 3px solid #2a77fc;
+  border-bottom: 3px solid #2a77fc;
+  border-radius: 0 3px 3px 0;
 }
 
 input {
   display: block;
   border: 1px solid #eee;
   padding: 0.5em;
-  margin: 10px auto auto auto;
-  width: 100%;
   font-size: 1em;
+  box-sizing: border-box;
 }
 
 textarea {
-  width: 100%;
-  resize: none;
+  resize: vertical;
   border: 1px solid #eee;
   padding: 0.5em;
   margin: 10px auto auto auto;
   width: 100%;
   font-size: 1em;
+  box-sizing: border-box;
 }
 
 input[type="text"] {
@@ -39,15 +42,29 @@ input[type=submit] {
   background-color: #2a77fc;
   border: 0;
   color: white;
-  margin: 25px -1em auto auto;
+  margin: 25px 0 0 auto;
 }
+
 
 input[type=submit]:hover {
   background: #79a9fc;
 }
 
+.new_post_header {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-top: 0;
+}
+
 @media screen and (max-width: 1280px) {
   .content {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form_container {
+    width: 85%;
   }
 }

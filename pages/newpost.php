@@ -11,9 +11,10 @@
 
   <div class="content">
     <div class="form_container">
+      <h1 class="new_post_header">New Post</h1>
       <form class="new_post_form" action="index.html" method="post">
         <input type="text" name="post_title" placeholder="Post title">
-        <textarea name="post_content" rows="16" cols="40" placeholder="Write your post here"></textarea>
+        <textarea name="post_content" rows="16" placeholder="Write your post here"></textarea>
         <input type="submit" name="post_submit" value="Submit">
       </form>
     </div>
