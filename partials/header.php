@@ -65,12 +65,13 @@
         <h4 class="header_h4">Dennis ten Hoove</h4>
       </div>
       <div class="right">
-        <a href="/">Home</a>
-        <a href="/pages/projects.php">Projects</a>
+        <!-- Horrible way to remove white spaces -->
+        <a href="/">Home</a
+        ><a href="/pages/projects.php">Projects</a
         <?php if (isset($_SESSION['userId'])) { ?>
-          <a href="/functions/logout.func.php">Logout</a>
+          ><a href="/functions/logout.func.php">Logout</a>
         <?php } else { ?>
-          <a href="/pages/login.php">Login</a>
+          ><a href="/pages/login.php">Login</a>
         <?php }; ?>
       </div>
     </header>
