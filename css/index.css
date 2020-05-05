@@ -47,6 +47,7 @@
 .paragraph {
   width: 100%;
   border-radius: 3px;
+  background-color: #fff;
 }
 
 .header_title {
@@ -61,8 +62,9 @@
 }
 
 .boxed {
-  border: 1px solid #eee;
+  border: 1px solid #d0d0d0;
   border-left: 3px solid #d8d8d8;
+  border-bottom: 2px solid #d0d0d0;
   border-radius: 3px;
 }
 
