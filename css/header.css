@@ -69,13 +69,19 @@ header {
 }
 
 .notice {
-  background-color: #FAB57F;
+  background-color: #e59502;
+  color: #fff;
+  fill: white;
 }
 
 .confirm {
-  background-color: #90EE90;
+  background-color: #009933;
+  color: #fff;
+  fill: white;
 }
 
 .warning {
-  background-color: #FF6347;
+  background-color: #B33A3A;
+  color: #fff;
+  fill: white;
 }
