@@ -12,8 +12,9 @@
   <div class="content">
     <div class="form_container">
       <h1 class="new_post_header">New Post</h1>
-      <form class="new_post_form" action="index.html" method="post">
-        <input type="text" name="post_title" placeholder="Post title">
+      <form class="new_post_form" action="/functions/newpost.func.php" method="post">
+        <input type="text" name="post_title" placeholder="Post title" maxlength="255">
+        <input type="text" name="post_image" placeholder="Image URL" maxlength="255">
         <textarea name="post_content" rows="16" placeholder="Write your post here"></textarea>
         <input type="submit" name="post_submit" value="Submit">
       </form>
