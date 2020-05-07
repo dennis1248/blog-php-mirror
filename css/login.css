@@ -1,9 +1,12 @@
 .login_box {
   width: 500px;
   margin: 100px auto auto auto;
-  border: 1px solid #eee;
+  border: 1px solid #d0d0d0;
+  border-left: 3px solid #d8d8d8;
+  border-bottom: 2px solid #d0d0d0;
   border-left: 3px solid #2a77fc;
   border-radius: 0 3px 3px 0;
+  background-color: #fff;
 }
 
 .login_box_header {

@@ -1,0 +1,24 @@
+.content {
+  width: 1280px;
+  margin: 80px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.container {
+  width: 85%;
+  padding: 20px 0 20px 0;
+  margin: auto;
+}
+
+.post_header {
+  border-bottom: 1px solid #eee;
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 100%;
+  }
+}
