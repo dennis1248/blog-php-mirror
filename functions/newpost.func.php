@@ -7,6 +7,12 @@
     exit();
   }
 
+  // check if logged in
+  if (!isset($_SESSION['userId'])) {
+    header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?message=You are not logged in, login to access this feature&message-type=notice");
+    exit();
+  }
+
   if (isset($_POST['post_submit'])) {
 
     require 'database.inc.php';

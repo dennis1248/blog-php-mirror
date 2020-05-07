@@ -36,6 +36,10 @@
     <?php if ($pageName === 'newpost.php') : ?>
       <link rel="stylesheet" href="/css/newpost.css">
     <?php endif; ?>
+
+    <?php if ($pageName === 'viewpost.php') : ?>
+      <link rel="stylesheet" href="/css/viewpost.css">
+    <?php endif; ?>
   </head>
   <body>
 
