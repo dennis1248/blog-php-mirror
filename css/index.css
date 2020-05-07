@@ -68,6 +68,10 @@
   border-radius: 3px;
 }
 
+.reverse {
+  flex-direction: column-reverse !important;
+}
+
 .post {
   border-left: 3px solid #2a77fc;
 }
@@ -96,11 +100,8 @@
   }
 
   .container {
-    display: none;
-  }
-
-  .container_small {
-    display: flex;
+    width: 80%;
     margin: auto;
+    padding: 0;
   }
 }
