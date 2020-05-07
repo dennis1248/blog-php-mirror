@@ -2,6 +2,8 @@
 
   include ($_SERVER['DOCUMENT_ROOT'].'/config/default.conf');
 
+  session_start();
+
   if (!$allowNewPosts) {
     header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=The site is configured to not allow new posts&message-type=warning");
     exit();
@@ -9,7 +11,7 @@
 
   // check if logged in
   if (!isset($_SESSION['userId'])) {
-    header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?message=You are not logged in, login to access this feature&message-type=notice");
+    header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?message=You are not logged in, login to access this page&message-type=notice");
     exit();
   }
 
