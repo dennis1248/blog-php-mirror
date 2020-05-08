@@ -1,5 +1,5 @@
 .content {
-  width: 1280px;
+  max-width: 1280px;
   margin: 80px auto auto auto;
 }
 
@@ -16,4 +16,15 @@
 .git_links {
   text-decoration: none;
   color: blue;
+}
+
+.git_info p, .git_info p a  {
+  max-width: 75%;
+  text-align: center;
+}
+
+@media (pointer:none), (pointer:coarse) {
+  .git_info {
+    font-size: 1.5em;
+  }
 }

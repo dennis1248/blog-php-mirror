@@ -85,3 +85,21 @@ header {
   color: #fff;
   fill: white;
 }
+
+@media (pointer:none), (pointer:coarse) {
+  .left {
+    display: none;
+  }
+
+  .right {
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+  }
+
+  header {
+    height: 6em;
+  }
+}

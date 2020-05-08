@@ -19,7 +19,7 @@
 }
 
 .content {
-  width: 1280px;
+  max-width: 1280px;
   margin: 80px auto auto auto;
   display: flex;
   flex-direction: row;
@@ -99,5 +99,25 @@
     width: 80%;
     margin: auto;
     padding: 0;
+  }
+}
+
+@media (pointer:none), (pointer:coarse) {
+  .content {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .article p, .article a {
+    font-size: 1.5em;
   }
 }
