@@ -9,7 +9,7 @@
     exit();
   }
 
-  $sql = "SELECT title,content FROM posts WHERE id={$id}";
+  $sql = "SELECT title,image,content FROM posts WHERE id={$id}";
   $result = mysqli_query($conn, $sql);
 
  ?>

@@ -5,119 +5,77 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #151515;
 }
 
 .controls_button {
   display: inline-block;
   text-decoration: none;
-  margin: 0 10px;
-  color: blue;
+  color: #fff;
+  padding: 0.75em 1em;
+  border-left: 1px solid #2b2b2b;
+}
+
+.controls_button:nth-child(1) {
+  border-left: 1px solid #2b2b2b;
+  border-right: 1px solid #2b2b2b;
+}
+
+.controls_button:nth-child(2) {
+  border-right: 1px solid #2b2b2b;
 }
 
 .controls_button:hover {
-  text-decoration: underline;
+  background: #004080;
 }
 
 .content {
   max-width: 1280px;
   margin: 80px auto auto auto;
-  display: flex;
-  flex-direction: row;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding: 0 30px 0 30px;
-}
-
-.container_small {
-  display: none;
-  width: 80%;
-  margin: auto;
-  flex-direction: column;
-}
-
-.container_box {
+.post_container {
   width: 100%;
-  padding-bottom: 30px;
-}
-
-.paragraph {
-  width: 100%;
-  border-radius: 3px;
   background-color: #fff;
-}
-
-.header_title {
-  padding: 10px 25px 10px 25px;
-  border-bottom: 1px solid #eee;
-}
-
-.header_title h3 {
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
-}
-
-.boxed {
-  border: 1px solid #d0d0d0;
-  border-left: 3px solid #d8d8d8;
-  border-bottom: 2px solid #d0d0d0;
   border-radius: 3px;
 }
 
 .post {
-  border-left: 3px solid #2a77fc;
-}
-
-.article {
-  padding: 10px 25px 10px 25px;
-}
-
-.article_image {
+  border-top: 1px solid #eee;
   width: 100%;
-  height: 225px;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+  box-sizing: border-box;
+  padding: 45px;
 }
 
-@media screen and (max-width: 1280px) {
-  .content {
-    width: 100%;
-  }
+.post_content {
+  text-align: justify;
 }
 
-@media screen and (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .container {
-    width: 80%;
-    margin: auto;
-    padding: 0;
-  }
+.post_footer {
+  padding-top: 25px;
 }
 
-@media (pointer:none), (pointer:coarse) {
-  .content {
-    flex-direction: column;
-  }
+.post_title {
+  padding-top: 0;
+  margin-top: 0;
+}
 
-  .container {
-    width: 80%;
-    margin: auto;
-    padding: 0;
-  }
+.post_date {
+  font-weight: 200;
+  padding-bottom: 1em;
+  font-size: 0.8em;
+}
 
-  h3 {
-    font-size: 2em;
-  }
+.no_post_info {
+  height: 5em;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .article p, .article a {
-    font-size: 1.5em;
-  }
+.controls_active {
+  border-radius: 0 0 3px 3px !important;
 }
