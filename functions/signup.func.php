@@ -25,7 +25,7 @@
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       header("Location: http://".$_SERVER['HTTP_HOST']."/pages/signup.php?error=invalidemail&u=".$userName);
       exit();
-    } else if (!preg_match("/^[a-zA-Z0-9]*$/", $userName)) {
+    } else if (!preg_match("/^[a-zA-Z0-9_ ]*$/", $userName)) {
       header("Location: http://".$_SERVER['HTTP_HOST']."/pages/signup.php?error=invalidusername&e=".$email);
       exit();
     } else if ($password !== $passwordRepeat) {
