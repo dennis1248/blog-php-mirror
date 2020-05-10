@@ -17,7 +17,7 @@
             <div class="post">
               <div class="post_header">
                 <h1 class="post_title"><?php echo $row['title']; ?></h1>
-                <p class="post_date">By <b><?php echo $row['owner']; ?></b> at <?php echo $row['date']; ?></p>
+                <p class="post_date">Posted by <b><?php echo $row['owner']; ?></b> on <?php echo $row['date']; ?></p>
               </div>
               <div class="post_content">
                 <?php echo strip_tags(substr($row['content'], 0, 512)); if (strlen($row['content']) > 512) {echo "...";} ?>
