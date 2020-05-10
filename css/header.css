@@ -1,3 +1,7 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 html, body {
   margin: auto;
   padding: 0;
@@ -26,7 +30,7 @@ header {
 .right a {
   text-decoration: none;
   color: #fff;
-  padding: 0.75em 1em;
+  padding: 1em 1em;
   outline: none;
   border-left: 1px solid #2b2b2b;
 }
@@ -44,10 +48,6 @@ header {
   margin: 0 0 0 1em;
   font-weight: 400;
   color: #fff;
-}
-
-* {
-  font-family: 'Ubuntu', sans-serif;
 }
 
 #message {
