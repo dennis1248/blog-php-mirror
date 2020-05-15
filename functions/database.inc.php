@@ -1,10 +1,6 @@
 <?php
 
-  $dbServerName = "localhost";
-  $dbUserName = "testUser";
-  $dbPassword = "1234567890";
-  $dbName= "blogphp";
-
+  include ($_SERVER['DOCUMENT_ROOT'].'/config/database.conf');
 
   $conn = mysqli_connect($dbServerName, $dbUserName, $dbPassword, $dbName);
 
