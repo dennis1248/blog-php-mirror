@@ -32,3 +32,8 @@ blogphp +----+-----> posts +-+------> id +-------+ INT, Auto Increment
 
 
 ```
+
+# Example images
+![Index example](./docs/images/index_example.png)
+![Post example](./docs/images/post_example.png)
+![New account example](./docs/images/new_account_example.png)
