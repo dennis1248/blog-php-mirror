@@ -34,8 +34,8 @@
 }
 
 .post_content {
-   white-space: pre-line;
-   text-align: left;
+  white-space: pre-line;
+  text-align: left;
 }
 
 @media screen and (max-width: 1280px) {
