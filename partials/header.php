@@ -66,7 +66,7 @@
 
     <header>
       <div class="left">
-        <h4 class="header_h4">Dennis ten Hoove</h4>
+        <h4 class="header_h4"><?php echo $headerText; ?></h4>
       </div>
       <div class="right">
         <!-- Horrible way to remove white spaces -->
