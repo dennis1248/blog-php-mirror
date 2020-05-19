@@ -15,7 +15,7 @@
         <h1><?php echo $row['title']; ?></h1>
       </div>
       <div class="post_content">
-        <p><?php echo $row['content']; ?></p>
+        <?php echo $row['content']; ?>
       </div>
     </div>
   <?php } ?>
