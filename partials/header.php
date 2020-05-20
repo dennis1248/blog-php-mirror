@@ -33,11 +33,11 @@
       <link rel="stylesheet" href="/css/projects.css">
     <?php endif; ?>
 
-    <?php if ($pageName === 'newpost.php') : ?>
+    <?php if ($pageName === 'newpost.php' OR $pageName === 'newproject.php') : ?>
       <link rel="stylesheet" href="/css/newpost.css">
     <?php endif; ?>
 
-    <?php if ($pageName === 'viewpost.php') : ?>
+    <?php if ($pageName === 'viewpost.php' OR $pageName === 'viewproject.php') : ?>
       <link rel="stylesheet" href="/css/viewpost.css">
     <?php endif; ?>
   </head>
