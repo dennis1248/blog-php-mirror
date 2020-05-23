@@ -1,3 +1,23 @@
+/* Include all fonts */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: normal;
+  src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  src: url('/fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+
+/* header/general styling */
 * {
   font-family: 'Ubuntu', sans-serif;
 }

@@ -17,7 +17,6 @@
   <head>
     <meta charset="utf-8">
     <title>Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/header.css">
     <?php $pageName = basename($_SERVER['PHP_SELF']); ?>
 
