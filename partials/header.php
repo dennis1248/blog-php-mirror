@@ -38,6 +38,7 @@
 
     <?php if ($pageName === 'viewpost.php' OR $pageName === 'viewproject.php') : ?>
       <link rel="stylesheet" href="/css/viewpost.css">
+      <link rel="stylesheet" href="/css/viewpostcontent.css">
     <?php endif; ?>
   </head>
   <body>
