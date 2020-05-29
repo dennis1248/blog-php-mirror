@@ -32,6 +32,10 @@
       <link rel="stylesheet" href="/css/projects.css">
     <?php endif; ?>
 
+    <?php if ($pageName === 'manage.php') : ?>
+      <link rel="stylesheet" href="/css/manage.css">
+    <?php endif; ?>
+
     <?php if ($pageName === 'newpost.php' OR $pageName === 'newproject.php') : ?>
       <link rel="stylesheet" href="/css/newpost.css">
     <?php endif; ?>

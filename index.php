@@ -23,7 +23,7 @@
                 <?php echo strip_tags(substr($row['content'], 0, 512)); if (strlen($row['content']) > 512) {echo "...";} ?>
               </div>
               <div class="post_footer">
-                <?php if (strlen($row['content']) > 512 OR $row['image'] != 'empty'): ?>
+                <?php if (strlen($row['content']) > 512): ?>
                   <a href="/pages/viewpost.php?id=<?php echo $row['id']; ?>">Click to see full post</a>
                 <?php endif; ?>
               </div>

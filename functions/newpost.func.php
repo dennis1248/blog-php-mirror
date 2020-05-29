@@ -20,23 +20,18 @@
     require 'database.inc.php';
 
     $title = $_POST['post_title'];
-    $image = $_POST['post_image'];
     $content = $_POST['post_content'];
     $date = date("d-m-Y");
     $owner = $_SESSION['userName'];
 
-    if (str_replace(' ', '', $image) === '') {
-      $image = 'empty';
-    }
-
-      $sql = "INSERT INTO posts (title, image, content, date, owner) VALUES (?, ?, ?, ?, ?);";
+      $sql = "INSERT INTO posts (title, content, date, owner) VALUES (?, ?, ?, ?);";
       $stmt = mysqli_stmt_init($conn);
 
       if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=SQL statement failed, bye bye huge post you wrote :(&message-type=warning");
         exit();
       } else {
-        mysqli_stmt_bind_param($stmt, "sssss", $title, $image, $content, $date, $owner);
+        mysqli_stmt_bind_param($stmt, "ssss", $title, $content, $date, $owner);
         mysqli_stmt_execute($stmt);
       }
 
