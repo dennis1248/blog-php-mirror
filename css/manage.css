@@ -35,6 +35,7 @@ input {
   background: none;
   color: #3f66cc;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .post_title {
