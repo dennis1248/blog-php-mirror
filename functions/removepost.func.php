@@ -6,7 +6,7 @@
 
   // Check if id is valid
   if (!is_numeric($id)) {
-    header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=Invalid post datatype&message-type=warning");
+    header("Location: http://".$_SERVER['HTTP_HOST']."/?message=Invalid post datatype&message-type=warning");
     exit();
   }
 

@@ -1,7 +1,6 @@
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/partials/header.php'); ?>
-
-
 <?php
+  include ($_SERVER['DOCUMENT_ROOT'].'/partials/header.php');
+
   // check if logged in
   if (!isset($_SESSION['userId'])) {
     header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?message=You are not logged in, login to access this page&message-type=notice");

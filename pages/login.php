@@ -1,4 +1,11 @@
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/partials/header.php'); ?>
+<?php include ($_SERVER['DOCUMENT_ROOT'].'/partials/header.php');
+
+// check if logged in
+if (isset($_SESSION['userId'])) {
+  header("Location: http://".$_SERVER['HTTP_HOST']."/?message=You already are logged in, please logout to login :)&message-type=notice");
+  exit();
+}
+?>
 
   <div class="login_box">
     <div class="login_box_header">

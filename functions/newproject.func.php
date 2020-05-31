@@ -5,7 +5,7 @@
   session_start();
 
   if (!$allowNewProjects) {
-    header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=The site is configured to not allow new posts&message-type=warning");
+    header("Location: http://".$_SERVER['HTTP_HOST']."/?message=The site is configured to not allow new posts&message-type=warning");
     exit();
   }
 
@@ -28,7 +28,7 @@
       $stmt = mysqli_stmt_init($conn);
 
       if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=SQL statement failed, bye bye huge post you wrote :(&message-type=warning");
+        header("Location: http://".$_SERVER['HTTP_HOST']."/?message=SQL statement failed, bye bye huge post you wrote :(&message-type=warning");
         exit();
       } else {
         mysqli_stmt_bind_param($stmt, "ssss", $title, $content, $date, $owner);
@@ -38,7 +38,7 @@
       mysqli_stmt_close($stmt);
       mysqli_close($conn);
 
-      header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=Post has been made successfully&message-type=confirm");
+      header("Location: http://".$_SERVER['HTTP_HOST']."/?message=Post has been made successfully&message-type=confirm");
       exit();
     }
 

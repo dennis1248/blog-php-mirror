@@ -32,7 +32,7 @@ if (isset($_POST['login_send'])) {
           $_SESSION['userId'] = $row['id'];
           $_SESSION['userName'] = $row['userName'];
 
-          header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?message=You have successfully been logged in&message-type=confirm");
+          header("Location: http://".$_SERVER['HTTP_HOST']."/?message=You have successfully been logged in&message-type=confirm");
           exit();
 
         } else {
@@ -50,7 +50,7 @@ if (isset($_POST['login_send'])) {
 
 
 } else {
-  header("Location: http://".$_SERVER['HTTP_HOST']."/index.php?error=forbidden");
+  header("Location: http://".$_SERVER['HTTP_HOST']."/?error=forbidden");
   exit();
 }
 
