@@ -11,13 +11,12 @@
   }
 
   // Check if owner
-
   $query = "SELECT * FROM posts WHERE id={$id};";
   $result = mysqli_query($conn, $query);
   $row = mysqli_fetch_assoc($result);
 
   if ($row['owner'] !== $_SESSION['userName']) {
-    echo "ERROR";
+    header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?message=You are not logged in, login to access this feature&message-type=notice");
     exit();
   }
 
