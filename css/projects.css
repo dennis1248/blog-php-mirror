@@ -1,3 +1,4 @@
+/* Page/general */
 .content {
   max-width: 1280px;
   margin: 80px auto auto auto;
@@ -30,6 +31,7 @@
   }
 }
 
+/* Controls */
 .controls {
   width: 100%;
   margin: auto;
@@ -38,6 +40,8 @@
   align-items: center;
   justify-content: center;
   background-color: #151515;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .controls_button {
@@ -73,11 +77,16 @@
   border: 1px solid #d0d0d0;
 }
 
+/* Post */
 .post {
   border-top: 1px solid #eee;
   width: 100%;
   box-sizing: border-box;
   padding: 45px;
+}
+
+.post:first-of-type {
+  border-top: 0 !important;
 }
 
 .post_content {

@@ -1,4 +1,5 @@
 /* Include all fonts */
+/* Since the headerbar is loaded on all pages the fonts will be loaded on every page */
 @font-face {
   font-family: 'Montserrat';
   src: url('/fonts/Montserrat/Montserrat-ExtraLight.ttf');
@@ -17,7 +18,7 @@
 }
 
 
-/* header/general styling */
+/* header layout */
 * {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -47,6 +48,7 @@ header {
   float: right;
 }
 
+/* buttons */
 .right a {
   text-decoration: none;
   color: #fff;
@@ -70,6 +72,7 @@ header {
   color: #fff;
 }
 
+/* Error messages and warnings */
 #message {
   height: 2em;
 }
@@ -106,6 +109,8 @@ header {
   fill: white;
 }
 
+/* Responsive */
+/* The page will use a mobile style on mobile touch screen devices */
 @media (pointer:none), (pointer:coarse) {
   .left {
     display: none;

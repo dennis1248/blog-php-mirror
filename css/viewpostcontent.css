@@ -19,6 +19,7 @@ table, th, td {
   margin-bottom: 0;
 }
 
+/* Code block */
 bash {
   width: 100%;
   padding: 15px;
