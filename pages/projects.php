@@ -10,7 +10,7 @@
       </div>
       <?php if (isset($_SESSION['userId'])): ?>
         <div class="controls">
-          <a href="/pages/newproject.php" class="controls_button">New post</a>
+          <a href="/pages/newproject.php" class="controls_button">New project</a>
           <a href="/pages/manageprojects.php" class="controls_button">Manage projects</a>
         </div>
       <?php endif; ?>

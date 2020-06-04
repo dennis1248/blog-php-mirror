@@ -1,6 +1,6 @@
 <?php
   include ($_SERVER['DOCUMENT_ROOT'].'/partials/header.php');
-  include ($_SERVER['DOCUMENT_ROOT'].'/functions/getpostbyowner.func.php');
+  include ($_SERVER['DOCUMENT_ROOT'].'/functions/getpostsbyowner.func.php');
 
   // check if logged in
   if (!isset($_SESSION['userId'])) {
@@ -20,7 +20,7 @@
             </div>
             <div class="post_controls">
               <form action="/functions/removepost.func.php?id=<?php echo $row['id']; ?>" method="post">
-                <input type="submit" name="post_removed" value="Remove">
+                <input type="submit" name="post_removed" value="Remove" onclick="return confirm('Do you really want to remove this post?';)">
               </form>
               <form action="/pages/editpost.php?id=<?php echo $row['id']; ?>" method="post">
                 <input type="submit" name="post_removed" value="Edit">

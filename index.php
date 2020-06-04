@@ -8,7 +8,7 @@
     <?php if (isset($_SESSION['userId'])): ?>
       <div class="controls">
         <a href="/pages/newpost.php" class="controls_button">New post</a>
-        <a href="/pages/manage.php" class="controls_button"> Manage posts</a>
+        <a href="/pages/manageposts.php" class="controls_button"> Manage posts</a>
       </div>
     <?php endif; ?>
       <div class="post_container <?php if (isset($_SESSION['userId'])): ?>controls_active<?php endif; ?>">

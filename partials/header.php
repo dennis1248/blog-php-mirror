@@ -24,7 +24,7 @@
       <link rel="stylesheet" href="/css/index.css">
     <?php endif; ?>
 
-    <?php if ($pageName === 'login.php' OR $pageName === 'signup.php') : ?>
+    <?php if ($pageName === 'login.php' || $pageName === 'signup.php') : ?>
       <link rel="stylesheet" href="/css/login.css">
     <?php endif; ?>
 
@@ -32,15 +32,15 @@
       <link rel="stylesheet" href="/css/projects.css">
     <?php endif; ?>
 
-    <?php if ($pageName === 'manage.php') : ?>
+    <?php if ($pageName === 'manageposts.php' || $pageName === 'manageprojects.php') : ?>
       <link rel="stylesheet" href="/css/manage.css">
     <?php endif; ?>
 
-    <?php if ($pageName === 'newpost.php' OR $pageName === 'newproject.php') : ?>
+    <?php if ($pageName === 'newpost.php' || $pageName === 'newproject.php') : ?>
       <link rel="stylesheet" href="/css/newpost.css">
     <?php endif; ?>
 
-    <?php if ($pageName === 'viewpost.php' OR $pageName === 'viewproject.php') : ?>
+    <?php if ($pageName === 'viewpost.php' || $pageName === 'viewproject.php') : ?>
       <link rel="stylesheet" href="/css/viewpost.css">
       <link rel="stylesheet" href="/css/viewpostcontent.css">
     <?php endif; ?>
