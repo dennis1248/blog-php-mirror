@@ -10,7 +10,7 @@
 
   <div class="content">
     <div class="form_container">
-      <h1 class="new_post_header">New Post</h1>
+      <h1 class="new_post_header">New Project</h1>
       <form class="new_post_form" action="/functions/newproject.func.php" method="post">
         <input type="text" name="post_title" placeholder="Post title" maxlength="255">
         <textarea name="post_content" rows="16" placeholder="Write your post here"></textarea>
