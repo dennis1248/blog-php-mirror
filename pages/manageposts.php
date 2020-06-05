@@ -20,7 +20,7 @@
             </div>
             <div class="post_controls">
               <form action="/functions/removepost.func.php?id=<?php echo $row['id']; ?>" method="post">
-                <input type="submit" name="post_removed" value="Remove" onclick="return confirm('Do you really want to remove this post?';)">
+                <input type="submit" name="post_removed" value="Remove" onclick="return confirm('Do you really want to remove this post?');">
               </form>
               <form action="/pages/editpost.php?id=<?php echo $row['id']; ?>" method="post">
                 <input type="submit" name="post_removed" value="Edit">
