@@ -1,0 +1,24 @@
+/* Include all fonts */
+/* Since the headerbar is loaded on all pages the fonts will be loaded on every page */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 600;
+  src: url('/fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 100;
+  src: url('/fonts/Ubuntu/Ubuntu-Light.ttf');
+}

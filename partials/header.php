@@ -18,6 +18,7 @@
     <meta charset="utf-8">
     <title>Blog</title>
     <link rel="stylesheet" href="/css/header.css">
+    <!-- Load appropriate CSS file(s) -->
     <?php $pageName = basename($_SERVER['PHP_SELF']); ?>
 
     <?php if ($pageName === 'index.php') : ?>
@@ -43,6 +44,11 @@
     <?php if ($pageName === 'viewpost.php' || $pageName === 'viewproject.php') : ?>
       <link rel="stylesheet" href="/css/viewpost.css">
       <link rel="stylesheet" href="/css/viewpostcontent.css">
+    <?php endif; ?>
+
+    <!-- Load fonts if enabled in config -->
+    <?php if ($useCustomFonts) : ?>
+      <link rel="stylesheet" href="/css/fonts.css">
     <?php endif; ?>
   </head>
   <body>
