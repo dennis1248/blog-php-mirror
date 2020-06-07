@@ -2,8 +2,6 @@
 .content {
   width: 1280px;
   margin: 80px auto auto auto;
-  display: flex;
-  flex-direction: column;
   background-color: #fff;
   border-radius: 3px;
   box-sizing: border-box;

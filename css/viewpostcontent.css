@@ -1,14 +1,11 @@
 td, th {
-  padding: 5px;
+  padding: 15px 20px;
 }
 
-table {
-  margin: 10px 0 0 15px;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+.post_content th {
+  background: #f2f2f2;
+  font-weight: normal;
+  border: 1px solid #fff;
 }
 
 .post_content {
@@ -21,11 +18,40 @@ table, th, td {
 
 /* Code block */
 bash {
-  width: 100%;
+  width: 85%;
   padding: 15px;
   display: block;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #eee;
   font-size: 14px;
   line-height: 25px;
   margin: 10px 0 10px 0;
+  color: #444;
+}
+
+/* Tables */
+table {
+  margin: 10px 0 0 15px;
+}
+
+table, th, td {
+  border: 2px solid #f2f2f2;
+  border-collapse: collapse;
+}
+
+tr th:first-child {
+  border-left: 2px solid #f2f2f2;
+}
+
+tr th:last-child {
+  border-right: 2px solid #f2f2f2;
+}
+
+td {
+  color: #666666;
+}
+
+th {
+  color: #262727;
 }
