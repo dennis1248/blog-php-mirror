@@ -18,7 +18,7 @@ td, th {
 
 /* Code block */
 bash {
-  width: 85%;
+  width: auto;
   padding: 15px;
   display: block;
   background-color: #fafafa;
@@ -26,13 +26,13 @@ bash {
   border: 1px solid #eee;
   font-size: 14px;
   line-height: 25px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 5px 0;
   color: #444;
 }
 
 /* Tables */
 table {
-  margin: 10px 0 0 15px;
+  margin: 25px 0 25px 25px;
 }
 
 table, th, td {

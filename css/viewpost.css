@@ -17,6 +17,7 @@
 /* Post */
 .post_header {
   border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
 }
 
 .post_header h1 {
@@ -36,8 +37,8 @@
 .post_content {
   white-space: pre-line;
   text-align: left;
-  margin-top: 15px;
   overflow: hidden;
+  width: 85%;
 }
 
 /* Responsive */
