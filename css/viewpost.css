@@ -7,6 +7,7 @@
   box-sizing: border-box;
   padding: 45px;
   border: 1px solid #d0d0d0;
+  transition: 0.5s;
 }
 
 .container {
@@ -39,6 +40,8 @@
   text-align: left;
   overflow: hidden;
   width: 85%;
+  margin: auto;
+  transition: width 0.3s;
 }
 
 /* Responsive */
@@ -48,8 +51,17 @@
   }
 }
 
-@media (pointer:none), (pointer:coarse) {
+@media (max-width:768px), (hover:none) {
   .post_content {
-    font-size: 1.5em;
+    width: 100% !important;
+    transition: width 0.3s;
+    padding-bottom: 15px;
+  }
+
+  .content {
+    padding: 25px;
+    transition: 0.5s;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
 }
