@@ -1,0 +1,17 @@
+.responsive_footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 3em;
+    background-color: #151515;
+    display: none;
+}
+
+.responsive_footer h4 {
+    padding: 0;
+    margin: auto;
+    font-weight: 400;
+    color: #fff;
+    line-height: 3em;
+    text-align: center;
+}

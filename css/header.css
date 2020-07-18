@@ -90,8 +90,7 @@ header {
 }
 
 /* Responsive */
-/* The page will use a mobile style on mobile touch screen devices */
-@media (pointer:none), (pointer:coarse) {
+@media (max-width:768px), (hover:none) {
   .left {
     display: none;
   }
@@ -101,10 +100,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+  }
+
+  .responsive_footer {
+    display: block !important;
   }
 
   header {
-    height: 6em;
+    position: fixed;
+    top: 0;
   }
 }

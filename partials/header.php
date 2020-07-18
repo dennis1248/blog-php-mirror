@@ -18,6 +18,7 @@
     <meta charset="utf-8">
     <title>Blog</title>
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <!-- Load appropriate CSS file(s) -->
     <?php $pageName = basename($_SERVER['PHP_SELF']); ?>
 
