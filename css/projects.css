@@ -126,3 +126,15 @@
 .controls_inactive {
   margin-top: 50px;
 }
+
+@media (max-width:768px), (hover:none) {
+  .content {
+    transition: 0.5s;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  
+  .git_info {
+    
+  }
+}

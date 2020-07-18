@@ -111,3 +111,10 @@ header {
     top: 0;
   }
 }
+
+@media (max-width:768px), (hover:none) {
+  #message  {
+    padding-top: 3em;
+    margin-bottom: -3em;
+  }
+}

@@ -2,6 +2,7 @@
 .content {
   max-width: 1280px;
   margin: 80px auto auto auto;
+  transition: 0.5s;
 }
 
 .no_post_info {
@@ -58,7 +59,7 @@
 .controls {
   width: 100%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 6em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,4 +91,12 @@
 
 .controls_active {
   border-radius: 0 0 3px 3px !important;
+}
+
+@media (max-width:768px), (hover:none) {
+  .content {
+    transition: 0.5s;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
 }
