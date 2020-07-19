@@ -93,10 +93,21 @@
   border-radius: 0 0 3px 3px !important;
 }
 
+@media (max-width:1280px) {
+  .post_container {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
 @media (max-width:768px), (hover:none) {
   .content {
     transition: 0.5s;
     margin-top: 3em;
     margin-bottom: 3em;
+  }
+
+  .post_container {
+    border: 0;
   }
 }

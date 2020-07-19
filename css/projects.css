@@ -128,10 +128,21 @@
   margin-top: 50px;
 }
 
+@media (max-width:1280px) {
+  .post_container, .git_info {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
 @media (max-width:768px), (hover:none) {
   .content {
     transition: 0.5s;
     margin-top: 3em;
     margin-bottom: 3em;
+  }
+
+  .post_container, .git_info {
+    border: 0;
   }
 }
