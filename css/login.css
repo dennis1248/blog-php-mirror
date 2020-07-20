@@ -1,5 +1,6 @@
 /* Box style */
 .login_box {
+  transition: 0.5s;
   width: 500px;
   margin: 100px auto auto auto;
   border: 1px solid #d0d0d0;
@@ -77,4 +78,14 @@ input[disabled] {
 .error {
   color: red;
   font-weight: bold;
+}
+
+@media (max-width:500px) {
+  .login_box {
+    transition: 0.5s;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 0;
+  }
 }

@@ -113,8 +113,7 @@ header {
 }
 
 @media (max-width:768px), (hover:none) {
-  #message  {
+  html {
     padding-top: 3em;
-    margin-bottom: -3em;
   }
 }

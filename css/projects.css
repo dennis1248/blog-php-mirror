@@ -138,7 +138,7 @@
 @media (max-width:768px), (hover:none) {
   .content {
     transition: 0.5s;
-    margin-top: 3em;
+    margin-top: 0;
     margin-bottom: 3em;
   }
 
