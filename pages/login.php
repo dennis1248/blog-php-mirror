@@ -16,6 +16,15 @@ if (isset($_SESSION['userId'])) {
         <?php if ($_GET[error] === 'invalidlogin'): ?>
           <p class="error">Username or password is incorrect</p>
         <?php endif; ?>
+        <?php if ($_GET[error] === 'emptyfields'): ?>
+          <p class="error">Please fill in all fields</p>
+        <?php endif; ?>
+        <?php if ($_GET[error] === 'sqlerror'): ?>
+          <p class="error">An SQL error occured</p>
+        <?php endif; ?>
+        <?php if ($_GET[error] === 'loginerror'): ?>
+          <p class="error">A login error occured</p>
+        <?php endif; ?>
         <input type="text" name="mailuserName" placeholder="Email address or username">
         <input type="password" name="password" placeholder="Password">
         <input type="submit" name="login_send" value="Sign me in">
