@@ -1,6 +1,6 @@
 <?php
 
-  include ($_SERVER['DOCUMENT_ROOT'].'/config/default.conf');
+  include ($_SERVER['DOCUMENT_ROOT'].'/config/default.php');
 
   session_start();
 

@@ -1,7 +1,7 @@
 <?php
 
   // Website settings
-  include ($_SERVER['DOCUMENT_ROOT'].'/config/default.conf');
+  include ($_SERVER['DOCUMENT_ROOT'].'/config/default.php');
 
   // SVG icons
   include ($_SERVER['DOCUMENT_ROOT'].'/functions/svgReq.func.php');
