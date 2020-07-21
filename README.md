@@ -4,7 +4,7 @@ This is the source for my personal blog. It was made as a PHP learning project.
 
 ### Usage
 - Place source on PHP capable webserver.
-- Configure `/config/default.conf` and `/config/database.conf`
+- Configure `/config/default.php` and `/config/database.php`
 - Setup database (Example database included in `/docs/database`)
 
 # Example images
