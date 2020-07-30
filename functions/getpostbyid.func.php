@@ -10,7 +10,7 @@
     exit();
   }
 
-  $sql = 'SELECT title,content FROM posts WHERE id=?';
+  $sql = 'SELECT title,content,id FROM posts WHERE id=?';
   $stmt = mysqli_stmt_init($conn);
 
   if (!mysqli_stmt_prepare($stmt, $sql)) {
