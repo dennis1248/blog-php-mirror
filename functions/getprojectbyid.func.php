@@ -9,7 +9,7 @@
     exit();
   }
 
-  $sql = 'SELECT title,content FROM projects WHERE id=?';
+  $sql = 'SELECT title,content,id FROM projects WHERE id=?';
   $stmt = mysqli_stmt_init($conn);
 
   if (!mysqli_stmt_prepare($stmt, $sql)) {
