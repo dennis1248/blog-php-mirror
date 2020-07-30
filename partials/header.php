@@ -38,7 +38,7 @@
       <link rel="stylesheet" href="/css/manage.css">
     <?php endif; ?>
 
-    <?php if ($pageName === 'newpost.php' || $pageName === 'newproject.php') : ?>
+    <?php if ($pageName === 'newpost.php' || $pageName === 'newproject.php' || $pageName === 'edit.php') : ?>
       <link rel="stylesheet" href="/css/newpost.css">
     <?php endif; ?>
 
