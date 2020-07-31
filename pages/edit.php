@@ -6,8 +6,14 @@
     header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?message=You are not logged in, login to access this page&message-type=notice");
     exit();
   }
-  
+
   $section = $_GET['section'];
+
+  // Check if valid section is defined
+  if (!isset($section) || str_replace(' ', '', $section) === '') {
+    header("Location: http://".$_SERVER['HTTP_HOST']."?message=No proper update target defined&message-type=warning");
+    exit();
+  }
 
   // Include appropriate get posts file
   if ($section === 'posts') {
