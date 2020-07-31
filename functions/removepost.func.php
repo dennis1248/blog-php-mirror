@@ -26,13 +26,12 @@
 
   mysqli_stmt_close($stmt);
 
-
-  // Remove the post
   if ($row['owner'] !== $_SESSION['userName']) {
     header("Location: http://".$_SERVER['HTTP_HOST']."/pages/login.php?message=You are not logged in, login to access this feature&message-type=notice");
     exit();
   }
-
+  
+  // Remove the post
   $sql = 'DELETE FROM posts WHERE id=?;';
   $stmt = mysqli_stmt_init($conn);
 
