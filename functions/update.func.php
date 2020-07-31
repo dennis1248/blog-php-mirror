@@ -14,6 +14,12 @@
   $id = $_GET['id'];
   $section = $_GET['section'];
 
+  // Check if id is valid
+  if (!is_numeric($id)) {
+    header("Location: http://".$_SERVER['HTTP_HOST']."/?message=Invalid post datatype&message-type=warning");
+    exit();
+  }
+
   // Check section and set target correctly
   if ($section === 'posts') {
     $target = 'posts';
@@ -46,12 +52,6 @@
 
   if ($row['owner'] !== $_SESSION['userName']) {
     header("Location: http://".$_SERVER['HTTP_HOST']."/?message=You do not own this content and are not allowed to edit it&message-type=warning");
-    exit();
-  }
-
-  // Check if id is valid
-  if (!is_numeric($id)) {
-    header("Location: http://".$_SERVER['HTTP_HOST']."/?message=Invalid post datatype&message-type=warning");
     exit();
   }
 
