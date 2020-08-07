@@ -22,7 +22,7 @@
               <form action="/functions/removepost.func.php?id=<?php echo $row['id']; ?>" method="post">
                 <input type="submit" name="post_removed" value="Remove" onclick="return confirm('Do you really want to remove this post?');">
               </form>
-              <form action="/pages/edit.php?id=<?php echo $row['id']; ?>&section=posts" method="post">
+              <form action="/pages/edit.php?id=<?php echo $row['id']; ?>&world=posts" method="post">
                 <input type="submit" name="post_removed" value="Edit">
               </form>
             </div>
