@@ -11,7 +11,7 @@
 
   // Check if valid world is defined
   if (!isset($world) || str_replace(' ', '', $world) === '') {
-    header("Location: http://".$_SERVER['HTTP_HOST']."?message=No proper update target defined&message-type=warning");
+    header("Location: http://".$_SERVER['HTTP_HOST']."?message=No proper world defined&message-type=warning");
     exit();
   }
 
@@ -20,6 +20,9 @@
     include ($_SERVER['DOCUMENT_ROOT'].'/functions/getpostbyid.func.php');
   } elseif ($world === 'projects') {
     include ($_SERVER['DOCUMENT_ROOT'].'/functions/getprojectbyid.func.php');
+  } else {
+    header("Location: http://".$_SERVER['HTTP_HOST']."?message=No proper world defined&message-type=warning");
+    exit();
   }
 ?>
 
