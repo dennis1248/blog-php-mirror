@@ -12,7 +12,7 @@
   $title = $_POST['update_title'];
   $content = $_POST['update_content'];
   $id = $_GET['id'];
-  $section = $_GET['section'];
+  $world = $_GET['world'];
 
   // Check if id is valid
   if (!is_numeric($id)) {
@@ -20,10 +20,10 @@
     exit();
   }
 
-  // Check section and set target correctly
-  if ($section === 'posts') {
+  // Check world and set target correctly
+  if ($world === 'posts') {
     $target = 'posts';
-  } elseif ($section === 'projects') {
+  } elseif ($world === 'projects') {
     $target = 'projects';
   } else {
     header("Location: http://".$_SERVER['HTTP_HOST']."?message=No proper update target defined&message-type=warning");
